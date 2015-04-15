@@ -1,6 +1,7 @@
 #変更後はコンパイル
 #$ zcompile ~/.zshrc
 #設定
+#$ source ~/.zshrc
 
 #setenv () {export $1="$@[2,-1]"}
 
@@ -9,6 +10,9 @@ export LANG=ja_JP.UTF-8
 
 #出力の文字列末尾に改行コードが無い場合でも表示
 unsetopt promptcr
+
+#ビープ音を鳴らさないようにする
+setopt no_beep
 
 ###########
 ## alias ##
@@ -97,6 +101,9 @@ setopt auto_list
 #タブキー連打で補完候補を順に表示
 setopt auto_menu
 
+# Shift-Tabで補完候補を逆順する("\e[Z"でも動作する)
+bindkey "^[[Z" reverse-menu-complete  
+
 # 補完候補が複数ある時、一覧表示 (auto_list) せず、すぐに最初の候補を補完する
 setopt menu_complete
 
@@ -111,6 +118,9 @@ setopt complete_aliases
 
 ## カッコの対応などを自動的に補完
 setopt auto_param_keys
+
+#補完候補をできるだけ詰めて表示する
+setopt list_packed
 
 ##############
 ## 履歴関係 ##
@@ -137,6 +147,19 @@ setopt pushd_minus
 
 #移動履歴の重複禁止
 setopt PUSHD_IGNORE_DUPS
+
+#他のシェルのヒストリをリアルタイムで共有する
+setopt share_history
+
+# 余分なスペースを削除してヒストリに保存する
+setopt hist_reduce_blanks
+
+# マッチしたコマンドのヒストリを表示できるようにする
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
 
 ####################
 ## その他入力関係 ##
