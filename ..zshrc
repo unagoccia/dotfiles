@@ -22,7 +22,7 @@ setopt no_beep
 #alias javac="csh -c javac"
 
 #lsの設定
-alias ls="ls --color=auto"	#色つき
+alias ls="ls --color=auto"	        #色つき
 alias la="ls -a"			#隠しファイルも
 alias lf="ls -F"			#ディレクトリには/を
 alias ll="ls -l"			#詳細付き
