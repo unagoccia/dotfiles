@@ -3,6 +3,11 @@
 #設定
 #$ source ~/.zshrc
 
+#dircolorsを利用するためにインストール
+#brew install coreutils
+#PATH設定(.zshenv)
+#export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH" 
+
 #setenv () {export $1="$@[2,-1]"}
 
 #日本語utf-8
