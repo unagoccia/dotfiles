@@ -1,4 +1,10 @@
 
+##########
+## PATH ##
+##########
+
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
 ###############
 ## JAVA_HOME ##
 ###############
@@ -22,3 +28,8 @@ function removeFromPath() {
 # デフォルト
 setjdk 1.8.0_31
 
+#########
+## GVM ##
+#########
+
+[[ -s "/Users/hase-tt/.gvm/bin/gvm-init.sh" ]] && source "/Users/hase-tt/.gvm/bin/gvm-init.sh"
