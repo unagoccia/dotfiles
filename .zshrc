@@ -3,12 +3,6 @@
 #設定
 #$ source ~/.zshrc
 
-#dircolorsコマンドの利用設定
-#インストール
-#brew install coreutils
-#PATH設定(.zshenv)
-#export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-
 #setenv () {export $1="$@[2,-1]"}
 
 #日本語utf-8
@@ -40,6 +34,17 @@ alias suedit="sudo XMODIFIERS=@im=ibus GTK_IM_MODULE=xim gedit"
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
+
+#svn
+alias svncm="svn commit && svn update"
+alias svndel="svn delete"
+alias svnl="svn log --limit 20"
+alias svni="svn info"
+alias svnch="svn checkout"
+alias svndiff="svn diff --summarize"
+alias svnadd="svn add"
+alias svnrev="svn revert"
+alias svnup="svn update"
 
 #拡張子で自動化
 alias -s zip=zipinfo
@@ -189,20 +194,13 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31
 ##########
 
 #プロンプト
-	#%n	ユーザー名
-	#%M	コンピュータ名
-	#%c	カレントディレクトリ
-#通常
-PROMPT="[%n@%M]$ "
-#複数行
-PROMPT2="%_$ "
-#確認
-SPROMPT="%r is correct? [n,y,a,e]: " 
-#右プロンプト
-	#%*	時間
-#RPROMPT=$DEFAULT"[%*]"
-#複数行右プロンプト
-#RPROMPT2
+tmp_prompt="[~%(!.#.)]$ "
+tmp_prompt2="[%_]> "
+tmp_sprompt="%r is correct? [Yes, No, Abort, Edit]:"
+
+PROMPT=$tmp_prompt    # 通常のプロンプト
+PROMPT2=$tmp_prompt2  # セカンダリのプロンプト(コマンドが2行以上の時に表示される)
+SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
 
 #タイトル
 case "${TERM}" in

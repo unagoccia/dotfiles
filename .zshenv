@@ -5,6 +5,48 @@
 
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
+###########
+## PROXY ##
+###########
+
+alias setproxy="set_proxy"
+alias unsetproxy="unset_proxy"
+
+proxy=proxy.sso.ntts.co.jp:18080
+
+function set_proxy() {
+  export http_proxy=$proxy
+  export HTTP_PROXY=$proxy
+  export ftp_proxy=$proxy
+  export FTP_PROXY=$proxy
+  export all_proxy=$proxy
+  export ALL_PROXY=$proxy
+  export https_proxy=$proxy
+  export HTTPS_PROXY=$proxy
+
+  git config --global http.proxy $proxy
+  git config --global https.proxy $proxy
+  git config --global url."https://".insteadOf git://
+}
+
+function unset_proxy() {
+  unset http_proxy
+  unset HTTP_PROXY
+  unset ftp_proxy
+  unset FTP_PROXY
+  unset all_proxy
+  unset ALL_PROXY
+  unset https_proxy
+  unset HTTPS_PROXY
+
+  git config --global --unset http.proxy
+  git config --global --unset https.proxy
+  git config --global --unset url."https://".insteadOf
+}
+
+#デフォルト(ON)
+setproxy
+
 ###############
 ## JAVA_HOME ##
 ###############
@@ -33,3 +75,7 @@ setjdk 1.8.0_31
 #########
 
 [[ -s "/Users/hase-tt/.gvm/bin/gvm-init.sh" ]] && source "/Users/hase-tt/.gvm/bin/gvm-init.sh"
+
+#Grails
+gvm default grails 2.5.0
+
