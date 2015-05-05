@@ -35,6 +35,10 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'homebrew' \
   'svn' \
+  'works' \
+  'proxy' \
+  'java' \
+  'gvm' \
   'prompt'
 
 #
