@@ -37,3 +37,6 @@ setopt HIST_BEEP                 # Beep when accessing non-existent history.
 
 # Lists the ten most used commands.
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
+
+function history-all { history -E 1 }
+function historyw { history-all | grep $1}
