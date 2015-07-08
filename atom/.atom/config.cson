@@ -1,0 +1,22 @@
+"*":
+  "exception-reporting":
+    userId: "e3827a09-2475-c9d9-1b45-cd2ec54493aa"
+  welcome:
+    showOnStartup: false
+  linter: {}
+  "japanese-wrap":
+    characterWidth: {}
+  core:
+    themes: [
+      "seti-ui"
+      "monokai"
+    ]
+    disabledPackages: [
+      "file-icons"
+    ]
+  editor:
+    invisibles: {}
+    tabLength: 4
+    undoGroupingInterval: 1000
+    showIndentGuide: true
+    fontSize: 16
