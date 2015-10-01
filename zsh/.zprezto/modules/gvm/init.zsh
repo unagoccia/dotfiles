@@ -4,7 +4,7 @@ if [[ "$OSTYPE" != darwin* ]]; then
 fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/hasebe/.gvm/bin/gvm-init.sh" ]] && source "/Users/hasebe/.gvm/bin/gvm-init.sh"
+[[ -s "/Users/hasebe/.gvm/bin/sdkman-init.sh" ]] && source "/Users/hasebe/.gvm/bin/sdkman-init.sh"
 
 #Grails
 gvm default grails 2.5.0
