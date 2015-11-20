@@ -40,7 +40,9 @@ zstyle ':prezto:load' pmodule \
   'java' \
   'gvm' \
   'wine' \
+  'docker' \
   'prompt'
+
 
 #
 # Editor

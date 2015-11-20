@@ -19,5 +19,12 @@
     tabLength: 4
     undoGroupingInterval: 1000
     showIndentGuide: true
+    scrollPastEnd: true
+    preferredLineLength: 150
   "atom-beautify":
     _analyticsUserId: "c020df16-a586-4ee7-a61c-6ef28a37f37e"
+  minimap: {}
+  "git-plus": {}
+".diff.source":
+  editor:
+    preferredLineLength: 150

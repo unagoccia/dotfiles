@@ -7,4 +7,4 @@ fi
 [[ -s "/Users/hasebe/.gvm/bin/sdkman-init.sh" ]] && source "/Users/hasebe/.gvm/bin/sdkman-init.sh"
 
 #Grails
-gvm default grails 2.5.0
+gvm default grails 2.5.1
