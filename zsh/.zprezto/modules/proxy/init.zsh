@@ -21,17 +21,17 @@ alias unsetproxy="unset_proxy"
 #
 
 function set_proxy() {
-  export http_proxy=$proxy
-  export HTTP_PROXY=$proxy
-  export ftp_proxy=$proxy
-  export FTP_PROXY=$proxy
-  export all_proxy=$proxy
-  export ALL_PROXY=$proxy
-  export https_proxy=$proxy
-  export HTTPS_PROXY=$proxy
+  export http_proxy=http://$proxy
+  export HTTP_PROXY=http://$proxy
+  #export ftp_proxy=$proxy
+  #export FTP_PROXY=$proxy
+  #export all_proxy=$proxy
+  #export ALL_PROXY=$proxy
+  export https_proxy=$http_proxy
+  export HTTPS_PROXY=$http_proxy
 
-  git config --global http.proxy $proxy
-  git config --global https.proxy $proxy
+  #git config --global http.proxy $proxy
+  #git config --global https.proxy $proxy
   git config --global url."https://".insteadOf git://
 }
 
