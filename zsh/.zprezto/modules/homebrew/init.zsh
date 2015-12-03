@@ -32,3 +32,12 @@ alias caski='brew cask install'
 alias caskl='brew cask list'
 alias casks='brew cask search'
 alias caskx='brew cask uninstall'
+
+#
+# Access Token
+#
+
+# brew api token
+if [ -f ~/.brew_api_token ];then
+  source ~/.brew_api_token
+fi
