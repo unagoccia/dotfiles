@@ -6,9 +6,6 @@ tap caskroom/versions
 cask sublime-text3
 cask thunderbird-ja
 
-## homebrew/bundle
-tap homebrew/bundle
-
 ## homebrew/versions
 tap homebrew/versions
 
