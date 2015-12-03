@@ -1,5 +1,5 @@
 # dotfiles
-dotfilesを管理する (.zshrc etc.)
+dotfiles関連を管理する (.zshrc brewfile etc.)
 
 ## 1. atom
 ■パッケージリストの作り方  
