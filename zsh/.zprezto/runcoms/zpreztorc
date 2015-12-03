@@ -34,13 +34,9 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'homebrew' \
-  'svn' \
   'works' \
-  'proxy' \
   'java' \
   'gvm' \
-  'wine' \
-  'docker' \
   'prompt'
 
 

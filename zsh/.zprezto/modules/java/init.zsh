@@ -29,4 +29,4 @@ function removeFromPath() {
 }
 
 # デフォルト
-setjdk 1.8.0_45
+setjdk 1.8.0_65
