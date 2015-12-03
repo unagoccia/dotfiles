@@ -64,11 +64,6 @@ brew subversion
 brew tree
 brew wget
 
-# Below applications were installed by Cask,
-# but do not have corresponding casks.
-
-#cask github (!)
-
 # App Store applications
 appstore CotEditor
 appstore DrCleaner
