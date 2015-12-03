@@ -9,6 +9,9 @@
 # General
 #
 
+# Set relogin alias
+alias relogin='exec $SHELL -l'
+
 # Set case-sensitivity for completion, history lookup, etc.
 # zstyle ':prezto:*:*' case-sensitive 'yes'
 

@@ -33,4 +33,16 @@ alias caskl='brew cask list'
 alias casks='brew cask search'
 alias caskx='brew cask uninstall'
 
+#
+# Access Token
+#
+
+# brew api token
+if [ -f ~/.brew_api_token ];then
+  source ~/.brew_api_token
+fi
+
+#
+# homebrew-cask install directory.
+#
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
