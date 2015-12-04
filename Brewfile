@@ -39,6 +39,7 @@ brew brew-file
 # Other Homebrew packages
 brew bash
 brew boost
+brew colordiff
 brew coreutils
 brew corkscrew
 brew docker
