@@ -63,6 +63,7 @@ brew tree
 brew wget
 
 # App Store applications
+appstore CalendarFree
 appstore CotEditor
 appstore DrCleaner
 appstore Fotor
