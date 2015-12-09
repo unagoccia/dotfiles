@@ -63,11 +63,11 @@ brew tree
 brew wget
 
 # App Store applications
-appstore CalendarFree
 appstore CotEditor
 appstore DrCleaner
 appstore Fotor
 appstore Living Weather HD free
+appstore MiniUsage
 appstore SourceTree
 appstore The Unarchiver
 appstore Wallpapers
