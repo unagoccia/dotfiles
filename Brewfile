@@ -18,12 +18,14 @@ cask astah-community
 cask atom
 cask bettertouchtool
 cask clipmenu
+cask day-o
 cask firefox
 cask google-chrome
 cask hosts
 cask limechat
 cask mysqlworkbench
 cask netbeans
+cask owasp-zap
 cask packer
 cask pgadmin3
 cask skitch
@@ -39,7 +41,6 @@ brew brew-file
 # Other Homebrew packages
 brew bash
 brew boost
-brew colordiff
 brew coreutils
 brew corkscrew
 brew docker
@@ -64,9 +65,9 @@ brew wget
 
 # App Store applications
 appstore CotEditor
-appstore DrCleaner
 appstore Fotor
 appstore Living Weather HD free
+appstore Memory Monitor
 appstore MiniUsage
 appstore SourceTree
 appstore The Unarchiver
