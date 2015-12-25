@@ -55,6 +55,7 @@ brew nkf
 brew node
 brew nodebrew
 brew openssl
+brew peco
 brew postgresql
 brew readline
 brew ruby
