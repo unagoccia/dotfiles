@@ -21,7 +21,6 @@ cask clipmenu
 cask day-o
 cask firefox
 cask google-chrome
-cask hosts
 cask limechat
 cask mysqlworkbench
 cask netbeans
