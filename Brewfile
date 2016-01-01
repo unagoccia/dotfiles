@@ -18,12 +18,13 @@ cask astah-community
 cask atom
 cask bettertouchtool
 cask clipmenu
+cask day-o
 cask firefox
 cask google-chrome
-cask hosts
 cask limechat
 cask mysqlworkbench
 cask netbeans
+cask owasp-zap
 cask packer
 cask pgadmin3
 cask skitch
@@ -53,6 +54,7 @@ brew nkf
 brew node
 brew nodebrew
 brew openssl
+brew peco
 brew postgresql
 brew readline
 brew ruby
@@ -63,9 +65,10 @@ brew wget
 
 # App Store applications
 appstore CotEditor
-appstore DrCleaner
 appstore Fotor
 appstore Living Weather HD free
+appstore Memory Monitor
+appstore MiniUsage
 appstore SourceTree
 appstore The Unarchiver
 appstore Wallpapers
