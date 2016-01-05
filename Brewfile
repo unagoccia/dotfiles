@@ -31,6 +31,7 @@ cask skitch
 cask textmate
 cask vagrant
 cask virtualbox
+cask vmware-fusion
 cask xtrafinder
 
 ## rcmdnk/file
@@ -40,6 +41,7 @@ brew brew-file
 # Other Homebrew packages
 brew bash
 brew boost
+brew colordiff
 brew coreutils
 brew corkscrew
 brew docker
