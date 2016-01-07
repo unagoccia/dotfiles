@@ -1,15 +1,12 @@
 
 # tap repositories and their packages
 
-## caskroom/versions
 tap caskroom/versions
 cask sublime-text3
 cask thunderbird-ja
 
-## homebrew/versions
 tap homebrew/versions
 
-## phinze/cask
 tap phinze/cask
 brew brew-cask
 cask 1password
@@ -34,7 +31,6 @@ cask virtualbox
 cask vmware-fusion
 cask xtrafinder
 
-## rcmdnk/file
 tap rcmdnk/file
 brew brew-file
 
