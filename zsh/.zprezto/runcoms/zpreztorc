@@ -44,7 +44,8 @@ zstyle ':prezto:load' pmodule \
   'gvm' \
   'wine' \
   'docker' \
-  'prompt'
+  'prompt' \
+  'peco'
 
 
 #
