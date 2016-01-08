@@ -105,7 +105,8 @@ zstyle ':prezto:load' pmodule \
   'wine' \
   'docker' \
   'prompt' \
-  'peco'
+  'peco' \
+  'vmware-fusion'
 
 
 #
