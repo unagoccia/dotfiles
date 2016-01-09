@@ -1,1 +1,211 @@
-zpreztorc_private
+#
+# Sets Prezto options.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+#
+# General
+#
+
+# Set relogin alias
+alias relogin='exec $SHELL -l'
+
+#Set myGrep func
+mygrep() {
+    declare -i argc=0
+    arg=()
+    
+    usage() {
+        echo "Usage: mygrep [-r or -L] [path] [-name FilePatern] [KeyWord]" 1>&2
+    }
+
+    while (( $# > 0 ))
+    do
+        case "$1" in
+            -*)
+                if [[ "$1" =~ name ]]; then
+                    shift
+                    file_patern="-name $1"
+                elif [[ "$1" =~ r ]]; then
+                    grep_method="-r"
+                elif [[ "$1" =~ L ]]; then
+                    grep_method="-L"
+                elif [[ "$1" =~ help ]]; then
+                    usage
+                    return 0
+                fi
+                shift
+                ;;
+            *)
+                ((++argc))
+                arg=("${arg[@]}" "$1")
+                shift
+                ;;
+        esac
+    done
+
+    # 引数の確認
+    if [ "$argc" -lt 2 ]; then
+        echo "Error: few arguments."
+        usage
+        return 0
+    elif [ "$argc" -gt 2 ]; then
+        echo "Error: too many arguments."
+        usage
+        return 0
+    fi
+
+    if [ -z $grep_method ]; then
+        echo "Error: grep method isn't selected."
+        usage
+        return 0
+    fi
+    
+    echo "find ${arg[1]} -type f ${file_patern} | xargs grep ${grep_method} \"${arg[2]}\"\n"
+    find ${arg[1]} -type f ${file_patern} | xargs grep "${grep_method}" "${arg[2]}"
+
+    #変数初期化
+    argc=""
+    arg=""
+    file_patern=""
+}
+
+# Set case-sensitivity for completion, history lookup, etc.
+# zstyle ':prezto:*:*' case-sensitive 'yes'
+
+# Color output (auto set to 'no' on dumb terminals).
+zstyle ':prezto:*:*' color 'yes'
+
+# Set the Zsh modules to load (man zshmodules).
+# zstyle ':prezto:load' zmodule 'attr' 'stat'
+
+# Set the Zsh functions to load (man zshcontrib).
+# zstyle ':prezto:load' zfunction 'zargs' 'zmv'
+
+#
+# Editor
+#
+
+# Set the key mapping style to 'emacs' or 'vi'.
+zstyle ':prezto:module:editor' key-bindings 'emacs'
+
+# Auto convert .... to ../..
+# zstyle ':prezto:module:editor' dot-expansion 'yes'
+
+#
+# Git
+#
+
+# Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
+# zstyle ':prezto:module:git:status:ignore' submodules 'all'
+
+#
+# GNU Utility
+#
+
+# Set the command prefix on non-GNU systems.
+# zstyle ':prezto:module:gnu-utility' prefix 'g'
+
+#
+# History Substring Search
+#
+
+# Set the query found color.
+# zstyle ':prezto:module:history-substring-search:color' found ''
+
+# Set the query not found color.
+# zstyle ':prezto:module:history-substring-search:color' not-found ''
+
+# Set the search globbing flags.
+# zstyle ':prezto:module:history-substring-search' globbing-flags ''
+
+#
+# Pacman
+#
+
+# Set the Pacman frontend.
+# zstyle ':prezto:module:pacman' frontend 'yaourt'
+
+#
+# Prompt
+#
+
+# Set the prompt theme to load.
+# Setting it to 'random' loads a random theme.
+# Auto set to 'off' on dumb terminals.
+zstyle ':prezto:module:prompt' theme 'sorin'
+
+#
+# Ruby
+#
+
+# Auto switch the Ruby version on directory change.
+# zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
+
+#
+# Screen
+#
+
+# Auto start a session when Zsh is launched in a local terminal.
+# zstyle ':prezto:module:screen:auto-start' local 'yes'
+
+# Auto start a session when Zsh is launched in a SSH connection.
+# zstyle ':prezto:module:screen:auto-start' remote 'yes'
+
+#
+# SSH
+#
+
+# Set the SSH identities to load into the agent.
+# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+
+#
+# Syntax Highlighting
+#
+
+# Set syntax highlighters.
+# By default, only the main highlighter is enabled.
+# zstyle ':prezto:module:syntax-highlighting' highlighters \
+#   'main' \
+#   'brackets' \
+#   'pattern' \
+#   'cursor' \
+#   'root'
+#
+# Set syntax highlighting styles.
+# zstyle ':prezto:module:syntax-highlighting' styles \
+#   'builtin' 'bg=blue' \
+#   'command' 'bg=blue' \
+#   'function' 'bg=blue'
+
+#
+# Terminal
+#
+
+# Auto set the tab and window titles.
+# zstyle ':prezto:module:terminal' auto-title 'yes'
+
+# Set the window title format.
+# zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+
+# Set the tab title format.
+# zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
+
+#
+# Tmux
+#
+
+# Auto start a session when Zsh is launched in a local terminal.
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+
+# Auto start a session when Zsh is launched in a SSH connection.
+# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+
+# Integrate with iTerm2.
+# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+
+# Load uncommon file.
+uncommon_file=$(dirname $(readlink $0) )/zpreztorc_uncommon
+. ${uncommon_file}
