@@ -4,7 +4,8 @@ if [[ "$OSTYPE" != darwin* ]]; then
 fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/hasebe/.gvm/bin/sdkman-init.sh" ]] && source "/Users/hasebe/.gvm/bin/sdkman-init.sh"
+export SDKMAN_DIR="${HOME}/.sdkman"
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 
 #Grails
 sdk default grails 2.5.1
