@@ -18,7 +18,7 @@ mygrep() {
     arg=()
     
     usage() {
-        echo "Usage: myGrep [-r or -L] [path] [-name FilePatern] [KeyWord]" 1>&2
+        echo "Usage: mygrep [-r or -L] [path] [-name FilePatern] [KeyWord]" 1>&2
     }
 
     while (( $# > 0 ))
