@@ -3,6 +3,8 @@ if [[ "$OSTYPE" != darwin* ]]; then
   return 1
 fi
 
+PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
+
 # aliases
 alias vmlist='vmrun -T fusion list'
 #alias vmstart='vmrun -T fusion start'
