@@ -35,7 +35,6 @@ tap rcmdnk/file
 brew brew-file
 
 tap rcmdnk/rcmdnkpac
-brew sentaku
 
 # Other Homebrew packages
 brew bash
