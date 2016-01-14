@@ -71,5 +71,4 @@ appstore Memory Monitor
 appstore MiniUsage
 appstore SourceTree
 appstore The Unarchiver
-appstore Wallpapers
 appstore Xcode
