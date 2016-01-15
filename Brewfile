@@ -13,6 +13,7 @@ cask 1password
 cask alfred
 cask astah-community
 cask atom
+cask bartender
 cask bettertouchtool
 cask clipmenu
 cask day-o
@@ -35,7 +36,6 @@ tap rcmdnk/file
 brew brew-file
 
 tap rcmdnk/rcmdnkpac
-brew sentaku
 
 # Other Homebrew packages
 brew bash
@@ -72,5 +72,4 @@ appstore Memory Monitor
 appstore MiniUsage
 appstore SourceTree
 appstore The Unarchiver
-appstore Wallpapers
 appstore Xcode
