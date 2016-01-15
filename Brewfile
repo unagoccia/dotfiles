@@ -13,6 +13,7 @@ cask 1password
 cask alfred
 cask astah-community
 cask atom
+cask bartender
 cask bettertouchtool
 cask clipmenu
 cask day-o
