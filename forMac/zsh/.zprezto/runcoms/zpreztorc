@@ -29,9 +29,9 @@ mygrep() {
                     shift
                     file_patern="-name $1"
                 elif [[ "$1" =~ r ]]; then
-                    grep_method="-r"
+                    grep_method="r"
                 elif [[ "$1" =~ L ]]; then
-                    grep_method="-L"
+                    grep_method="L"
                 elif [[ "$1" =~ help ]]; then
                     usage
                     return 0
@@ -63,8 +63,12 @@ mygrep() {
         return 0
     fi
     
-    echo "find ${arg[1]} -type f ${file_patern} | xargs grep ${grep_method} \"${arg[2]}\"\n"
-    find ${arg[1]} -type f ${file_patern} | xargs grep "${grep_method}" "${arg[2]}"
+    search_path="${arg[1]}"
+    [ ${search_path:$((${#search_path}-1))} != "/" ] && search_path="${search_path}/"
+    keyword="${arg[2]}"
+
+    echo "find ${search_path} -type f ${file_patern} | sed \"s#/\+#/#g\" | xargs grep -${grep_method}nw \"${keyword}\""
+    find "${search_path}" -type f ${file_patern} | sed "s#//#/#g" | xargs grep "-${grep_method}nw" "${keyword}"
 
     #変数初期化
     argc=""
