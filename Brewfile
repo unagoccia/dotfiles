@@ -50,6 +50,7 @@ brew git
 brew gnu-sed
 brew libtool
 brew libyaml
+brew maven
 brew mysql
 brew nkf
 brew node
