@@ -67,7 +67,6 @@ brew wget
 
 # App Store applications
 appstore CotEditor
-appstore Degrees
 appstore Fotor
 appstore Living Weather HD free
 appstore Memory Monitor
