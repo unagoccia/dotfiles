@@ -16,6 +16,7 @@ cask atom
 cask bartender
 cask bettertouchtool
 cask clipmenu
+cask dash
 cask day-o
 cask firefox
 cask google-chrome
