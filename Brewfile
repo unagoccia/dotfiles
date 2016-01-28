@@ -23,6 +23,7 @@ cask google-chrome
 cask limechat
 cask mysqlworkbench
 cask netbeans
+cask onyx
 cask owasp-zap
 cask packer
 cask pgadmin3
@@ -74,4 +75,5 @@ appstore Memory Monitor
 appstore MiniUsage
 appstore SourceTree
 appstore The Unarchiver
+appstore WinArchiver Lite
 appstore Xcode
