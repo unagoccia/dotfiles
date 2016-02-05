@@ -29,7 +29,6 @@ cask packer
 cask pgadmin3
 cask skitch
 cask textmate
-cask totalfinder
 cask vagrant
 cask virtualbox
 cask vmware-fusion
