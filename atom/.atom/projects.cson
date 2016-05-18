@@ -1,7 +1,18 @@
 dev:
-  title: "dev"
+  title: "dev-itemmng"
   paths: [
+    "/Users/hasebe/svn/案件管理/src/trunk/trunk/itemmng"
     "/Users/hasebe/svn/リポジトリ/src/trunk/01.DataRepositoryStep2"
     "/Users/hasebe/svn/リポジトリ/src/trunk/30.mail command"
-    "/Users/hasebe/svn/案件管理/src/trunk/trunk/itemmng"
+  ]
+eas:
+  title: "dev-eas"
+  paths: [
+    "/Users/hasebe/svn/テックキャンバス/eas/trunk/eas"
+    "/Users/hasebe/svn/テックキャンバス/eas/trunk/eas_idp"
+    "/Users/hasebe/svn/テックキャンバス/eas/trunk/eas_client"
+    "/Users/hasebe/svn/テックキャンバス/eas/trunk/configs"
+    "/Users/hasebe/svn/テックキャンバス/eas/trunk/eas_common"
+    "/Users/hasebe/svn/テックキャンバス/eas/trunk/eas_student"
+    "/Users/hasebe/svn/テックキャンバス/eas/trunk/eas_teacher"
   ]

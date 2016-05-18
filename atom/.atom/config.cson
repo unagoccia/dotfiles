@@ -1,30 +1,47 @@
 "*":
-  "exception-reporting":
-    userId: "e3827a09-2475-c9d9-1b45-cd2ec54493aa"
-  welcome:
-    showOnStartup: false
-  linter: {}
-  "japanese-wrap":
-    characterWidth: {}
+  "atom-beautify":
+    _analyticsUserId: "c020df16-a586-4ee7-a61c-6ef28a37f37e"
   core:
-    themes: [
-      "seti-ui"
-      "monokai"
-    ]
+    closeEmptyWindows: false
     disabledPackages: [
+      "script"
       "file-icons"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".localized"
+      ".vagrant"
+    ]
+    themes: [
+      "one-dark-ui"
+      "monokai"
     ]
   editor:
     invisibles: {}
+    preferredLineLength: 150
+    scrollPastEnd: true
+    showIndentGuide: true
     tabLength: 4
     undoGroupingInterval: 1000
-    showIndentGuide: true
-    scrollPastEnd: true
-    preferredLineLength: 150
-  "atom-beautify":
-    _analyticsUserId: "c020df16-a586-4ee7-a61c-6ef28a37f37e"
-  minimap: {}
+  "exception-reporting":
+    userId: "e3827a09-2475-c9d9-1b45-cd2ec54493aa"
   "git-plus": {}
+  "japanese-wrap":
+    characterWidth: {}
+  linter: {}
+  minimap:
+    plugins:
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
 ".diff.source":
   editor:
     preferredLineLength: 150
