@@ -16,12 +16,14 @@ cask atom
 cask bartender
 cask bettertouchtool
 cask clipmenu
+cask dash
 cask day-o
 cask firefox
 cask google-chrome
 cask limechat
 cask mysqlworkbench
 cask netbeans
+cask onyx
 cask owasp-zap
 cask packer
 cask pgadmin3
@@ -50,6 +52,7 @@ brew git
 brew gnu-sed
 brew libtool
 brew libyaml
+brew maven
 brew mysql
 brew nkf
 brew node
@@ -72,4 +75,5 @@ appstore Memory Monitor
 appstore MiniUsage
 appstore SourceTree
 appstore The Unarchiver
+appstore WinArchiver Lite
 appstore Xcode
