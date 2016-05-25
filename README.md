@@ -29,8 +29,8 @@ dotfiles関連を管理する (.zshrc brewfile etc.)
 >`$ sudo env http_proxy="http://<proxy_server>:<proxy_port>" port ...`  
 
 ■svnインストール  
-1. インストール  
-`$ sudo port -v install subversion +unicode_path`  
-2. インストール確認  
-`$ which svn`  
-`/opt/local/bin/svn`  
+>1. インストール  
+>`$ sudo port -v install subversion +unicode_path`  
+>2. インストール確認  
+>`$ which svn`  
+>`/opt/local/bin/svn`  
