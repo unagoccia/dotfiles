@@ -18,7 +18,7 @@ zstyle ':prezto:load' pmodule \
   'svn' \
   'works' \
   'proxy' \
-  'java' \
+  'jenv' \
   'gvm' \
   'wine' \
   'docker' \

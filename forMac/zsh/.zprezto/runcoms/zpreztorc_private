@@ -16,7 +16,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'homebrew' \
   'svn' \
-  'java' \
+  'jenv' \
   'gvm' \
   'prompt' \
   'peco' \

@@ -3,5 +3,5 @@ if [[ "$OSTYPE" != darwin* ]]; then
   return 1
 fi
 
-export PATH="$HOME/.jenv/bin:$PATH"'
+export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
