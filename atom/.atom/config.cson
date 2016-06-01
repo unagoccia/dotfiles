@@ -1,11 +1,14 @@
 "*":
   "atom-beautify":
     _analyticsUserId: "c020df16-a586-4ee7-a61c-6ef28a37f37e"
+    general:
+      _analyticsUserId: "0ccbbe58-eb52-47de-b6f8-ba0f6af45a51"
   core:
     closeEmptyWindows: false
     disabledPackages: [
       "script"
       "file-icons"
+      "grunt-runner"
     ]
     ignoredNames: [
       ".git"
@@ -33,7 +36,8 @@
   "git-plus": {}
   "japanese-wrap":
     characterWidth: {}
-  linter: {}
+  linter:
+    showErrorPanel: false
   minimap:
     plugins:
       "minimap-autohide": true
