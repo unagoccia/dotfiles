@@ -12,6 +12,11 @@ fi
 
 # Customize to your needs...
 
+## PATH ##
+export PATH=/usr/local/opt/gnu-tar/libexec/gnubin:$PATH
+
+
+## alias ##
 alias readlink='greadlink'
 alias awk='gawk'
 alias sed='gsed'
