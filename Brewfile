@@ -2,7 +2,6 @@
 # tap repositories and their packages
 
 tap caskroom/versions
-cask sublime-text3
 cask thunderbird-ja
 
 tap homebrew/versions
