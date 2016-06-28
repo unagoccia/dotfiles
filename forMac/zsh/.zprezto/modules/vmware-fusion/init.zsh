@@ -3,7 +3,7 @@ if [[ "$OSTYPE" != darwin* ]]; then
   return 1
 fi
 
-PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
+PATH="${PATH}:/Applications/VMware\ Fusion.app/Contents/Library"
 VM_MACHINES_DIR="${HOME}/Documents/Virtual Machines.localized"
 
 # aliases
