@@ -5,3 +5,8 @@ dev:
     "/Users/hasebe/svn/リポジトリ/src/trunk/30.mail command"
     "/Users/hasebe/svn/案件管理/src/trunk/trunk/itemmng"
   ]
+casino:
+  title: "casino"
+  paths: [
+    "/Users/unagoccia/git/archive/casino"
+  ]

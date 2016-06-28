@@ -1,3 +1,0 @@
-http-proxy=http://proxy.sso.ntts.co.jp:18080
-https-proxy=http://proxy.sso.ntts.co.jp:18080
-strict-ssl=false

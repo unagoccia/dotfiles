@@ -8,4 +8,4 @@ export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 
 #Grails
-sdk default grails 2.5.1
+sdk default grails 3.0.5
