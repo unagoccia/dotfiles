@@ -5,19 +5,18 @@
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
-  'environment' \
-  'terminal' \
-  'editor' \
-  'history' \
-  'directory' \
-  'spectrum' \
-  'utility' \
   'completion' \
-  'git' \
-  'homebrew' \
-  'svn' \
-  'jenv' \
+  'directory' \
+  'editor' \
+  'environment' \
   'gvm' \
-  'prompt' \
+  'history' \
+  'homebrew' \
+  'jenv' \
   'peco' \
+  'prompt' \
+  'spectrum' \
+  'svn' \
+  'terminal' \
+  'utility' \
   'vmware-fusion'

@@ -10,14 +10,103 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+#
+# Functions
+#
+
+#Set myGrep func
+mygrep() {
+    declare -i argc=0
+    arg=()
+
+    usage() {
+        echo "Usage: mygrep [-r or -L] [path] [-name FilePatern] [KeyWord]" 1>&2
+    }
+
+    while (( $# > 0 ))
+    do
+        case "$1" in
+            -*)
+                if [[ "$1" =~ name ]]; then
+                    shift
+                    file_patern="-name $1"
+                elif [[ "$1" =~ r ]]; then
+                    grep_method="r"
+                elif [[ "$1" =~ L ]]; then
+                    grep_method="L"
+                elif [[ "$1" =~ help ]]; then
+                    usage
+                    return 0
+                fi
+                shift
+                ;;
+            *)
+                ((++argc))
+                arg=("${arg[@]}" "$1")
+                shift
+                ;;
+        esac
+    done
+
+    # 引数の確認
+    if [ "$argc" -lt 2 ]; then
+        echo "Error: few arguments."
+        usage
+        return 0
+    elif [ "$argc" -gt 2 ]; then
+        echo "Error: too many arguments."
+        usage
+        return 0
+    fi
+
+    if [ -z $grep_method ]; then
+        echo "Error: grep method isn't selected."
+        usage
+        return 0
+    fi
+
+    search_path="${arg[1]}"
+    [ ${search_path:$((${#search_path}-1))} != "/" ] && search_path="${search_path}/"
+    keyword="${arg[2]}"
+
+    echo "find ${search_path} -type f ${file_patern} | sed \"s#/\+#/#g\" | xargs grep -${grep_method}nw \"${keyword}\""
+    find "${search_path}" -type f ${file_patern} | sed "s#//#/#g" | xargs grep "-${grep_method}nw" "${keyword}"
+
+    #変数初期化
+    argc=""
+    arg=""
+    file_patern=""
+}
+
+## open in Editor ##
+function openEditor() {
+    open -a coteditor $1
+}
+
+## 解凍 ##
+function extract() {
+  case $1 in
+    *.tar.gz|*.tgz) tar xzvf $1;;
+    *.tar.xz) tar Jxvf $1;;
+    *.zip) unzip $1;;
+    *.lzh) lha e $1;;
+    *.tar.bz2|*.tbz) tar xjvf $1;;
+    *.tar.Z) tar zxvf $1;;
+    *.gz) gzip -d $1;;
+    *.bz2) bzip2 -dc $1;;
+    *.Z) uncompress $1;;
+    *.tar) tar xvf $1;;
+    *.arj) unarj $1;;
+  esac
+}
+
+#
+# Aliases
+#
+alias relogin='exec $SHELL -l'
+alias -s {txt,zsh,log,md}=openEditor
+alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
+alias f='open .'
 
 ## PATH ##
-export PATH=/usr/local/opt/gnu-tar/libexec/gnubin:$PATH
-
-
-## alias ##
-alias readlink='greadlink'
-alias awk='gawk'
-alias sed='gsed'
-alias date='gdate'
+typeset -U path cdpath fpath manpath

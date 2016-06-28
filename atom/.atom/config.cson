@@ -9,6 +9,7 @@
       "script"
       "file-icons"
       "grunt-runner"
+      "linter-jshint"
     ]
     ignoredNames: [
       ".git"
