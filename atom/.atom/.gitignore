@@ -3,5 +3,6 @@
 .npm
 blob-store
 compile-cache
+projects.cson
 packages
 storage
