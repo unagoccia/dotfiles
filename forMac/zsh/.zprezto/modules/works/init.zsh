@@ -7,9 +7,11 @@ fi
 # Aliases
 #
 
-alias eas='cd ~/svn/テックキャンバス/eas/trunk'
-alias easdoc='cd ~/svn/テックキャンバス/eas_doc/trunk'
-alias easshare='cd ~/svn/テックキャンバス/eas_share/trunk'
+alias eas='cd ~/svn/テックキャンバス/eas/trunk && set-tab-title eas_src'
+alias easdoc='cd ~/svn/テックキャンバス/eas_doc/trunk && set-tab-title eas_doc'
+alias easshare='cd ~/svn/テックキャンバス/eas_share/trunk && set-tab-title eas_share'
+alias easntts='cd ~/svn/テックキャンバス/eas_share/trunk && set-tab-title eas_ntts'
+alias easwork='cd ~/svn/テックキャンバス/eas_share/trunk && set-tab-title eas_work'
 
 #
 # Functions
