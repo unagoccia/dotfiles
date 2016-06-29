@@ -10,6 +10,7 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'editor' \
   'environment' \
+  'git' \
   'gvm' \
   'history' \
   'homebrew' \

@@ -14,7 +14,7 @@ fi
 pmodload 'helper'
 
 # Source module files.
-source "${0:h}/alias.zsh"
+#source "${0:h}/alias.zsh"
 
 # auto save access info.
 git config --global credential.helper osxkeychain
