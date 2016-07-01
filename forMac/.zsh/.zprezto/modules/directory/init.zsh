@@ -23,8 +23,15 @@ unsetopt CLOBBER            # Do not overwrite existing files with > and >>.
                             # Use >! and >>! to bypass.
 
 #
+# Functions
+#
+setopt auto_cd
+function chpwd() { ls -GA }
+
+#
 # Aliases
 #
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
+for index ({1..9}) alias "${(l:`expr $index + 1`::..:)}"="cd ${(l:`expr \( $index + 1 \) \* 3`::../:)}"; unset index
