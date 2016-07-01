@@ -108,5 +108,8 @@ alias -s {txt,zsh,log,md}=openEditor
 alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
 alias f='open .'
 
+alias ssh="cat ~/.ssh/*/config >| ~/.ssh/config;ssh"
+alias scp="cat ~/.ssh/*/config >| ~/.ssh/config;scp"
+
 ## PATH ##
 typeset -U path cdpath fpath manpath
