@@ -35,6 +35,7 @@
   "exception-reporting":
     userId: "e3827a09-2475-c9d9-1b45-cd2ec54493aa"
   "git-plus": {}
+  "highlight-line": {}
   "japanese-wrap":
     characterWidth: {}
   linter:
