@@ -1,7 +1,9 @@
-storage
-compile-cache
-dev
-packages
-.npm
-.node-gyp
 .apm
+.apmrc
+.node-gyp
+.npm
+blob-store
+compile-cache
+projects.cson
+packages
+storage

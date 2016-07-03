@@ -1,0 +1,29 @@
+#
+# Sets Prezto options(work).
+#
+
+# Set the Prezto modules to load (browse modules).
+# The order matters.
+zstyle ':prezto:load' pmodule \
+  'cot-editor' \
+  'completion' \
+  'directory' \
+  'docker' \
+  'editor' \
+  'environment' \
+  'git' \
+  'gnu-utility' \
+  'gvm' \
+  'history' \
+  'homebrew' \
+  'jenv' \
+  'peco' \
+  'prompt' \
+  'proxy' \
+  'spectrum' \
+  'svn' \
+  'terminal' \
+  'utility' \
+  'vmware-fusion' \
+  'wine' \
+  'works'
