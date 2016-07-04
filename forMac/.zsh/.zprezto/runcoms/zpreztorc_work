@@ -26,4 +26,5 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'vmware-fusion' \
   'wine' \
-  'works'
+  'works' \
+  'z.sh'
