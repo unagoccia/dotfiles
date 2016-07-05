@@ -22,4 +22,5 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'utility' \
   'vmware-fusion' \
+  'zsh-autosuggestions' \
   'z.sh'

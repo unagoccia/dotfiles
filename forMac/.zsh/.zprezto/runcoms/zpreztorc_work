@@ -27,4 +27,5 @@ zstyle ':prezto:load' pmodule \
   'vmware-fusion' \
   'wine' \
   'works' \
+  'zsh-autosuggestions' \
   'z.sh'
