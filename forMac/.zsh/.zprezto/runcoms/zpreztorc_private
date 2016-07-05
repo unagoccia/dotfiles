@@ -21,4 +21,5 @@ zstyle ':prezto:load' pmodule \
   'svn' \
   'terminal' \
   'utility' \
-  'vmware-fusion'
+  'vmware-fusion' \
+  'z.sh'

@@ -12,15 +12,6 @@ else
   echo ".zprezto doesn't exist."
 fi
 
-## antigen
-if [[ -s "${ZDOTDIR:-$HOME}/.antigen/antigen.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.antigen/antigen.zsh"
-  antigen bundle mollifier/anyframe
-  antigen apply
-else
-  echo ".antigen doesn't exist."
-fi
-
 #
 # Functions
 #
@@ -121,8 +112,6 @@ alias f='open .'
 
 alias ssh="cat ~/.ssh/*/config >| ~/.ssh/config;ssh"
 alias scp="cat ~/.ssh/*/config >| ~/.ssh/config;scp"
-
-alias cdd="anyframe-widget-cdr"
 
 ## PATH ##
 typeset -U path cdpath fpath manpath
