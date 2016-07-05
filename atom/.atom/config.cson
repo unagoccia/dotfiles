@@ -42,6 +42,8 @@
     showErrorPanel: false
   minimap:
     plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
       "minimap-autohide": true
       "minimap-autohideDecorationsZIndex": 0
   "tree-view":
