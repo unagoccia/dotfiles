@@ -114,6 +114,7 @@ alias ssh="cat ~/.ssh/*/config >| ~/.ssh/config;ssh"
 alias scp="cat ~/.ssh/*/config >| ~/.ssh/config;scp"
 
 ## PATH ##
+export PATH="${HOME}/.nodebrew/current/bin:${PATH}"
 typeset -U path cdpath fpath manpath
 
 ## cdr
