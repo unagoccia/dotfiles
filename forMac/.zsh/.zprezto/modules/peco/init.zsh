@@ -1,7 +1,7 @@
 # Return if requirements are not found.
-if [[ "$OSTYPE" != darwin* ]]; then
-  return 1
-fi
+#if [[ "$OSTYPE" != darwin* && "$OSTYPE" != linux-gnu* ]]; then
+#  return 1
+#fi
 
 function peco-select-history() {
     local tac
@@ -19,3 +19,4 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
