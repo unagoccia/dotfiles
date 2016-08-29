@@ -23,3 +23,17 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+# 自動インデント整形
+'atom-text-editor':
+  'cmd-i': 'editor:auto-indent'
+
+# 矩形選択を Ctrl + Alt ではなく Alt だけでできるようにする : Emmet のキーバインドが重複していたので unset! で無効にする
+'atom-text-editor:not([mini])':
+  'alt-up': 'unset!'
+  'alt-down': 'unset!'
+
+# 矩形選択を Ctrl + Alt ではなく Alt だけでできるようにする
+'body':
+  'alt-up': 'editor:add-selection-above'
+  'alt-down': 'editor:add-selection-below'

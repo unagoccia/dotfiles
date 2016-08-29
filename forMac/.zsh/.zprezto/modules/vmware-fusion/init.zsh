@@ -68,13 +68,13 @@ vmstart () {
     if [[ -z "$1" ]]; then
         select_startvm
     else
-        vm_machine="$1"
+        selected_vm="$1"
     fi
     
      if [[ -z "${selected_vm}" ]]; then
      	echo "vm isn't selected."
      else
-         vmrun -T fusion start "$vm_machine" nogui
+         vmrun -T fusion start "$selected_vm" nogui
      fi    
 }
 
@@ -82,13 +82,13 @@ vmstop () {
     if [[ -z "$1" ]]; then
         select_stopvm
     else
-        vm_machine="$1"
+        selected_vm="$1"
     fi
     
      if [[ -z "${selected_vm}" ]]; then
      	echo "vm isn't selected."
      else
-         vmrun -T fusion stop "$vm_machine" soft
+         vmrun -T fusion stop "$selected_vm" soft
      fi    
 }
 
@@ -96,12 +96,12 @@ vmsuspend () {
     if [[ -z "$1" ]]; then
         select_stopvm
     else
-        vm_machine="$1"
+        selected_vm="$1"
     fi
     
      if [[ -z "${selected_vm}" ]]; then
      	echo "vm isn't selected."
      else
-         vmrun -T fusion suspend "$vm_machine"
+         vmrun -T fusion suspend "$selected_vm"
      fi    
 }
