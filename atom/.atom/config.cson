@@ -1,8 +1,21 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "c020df16-a586-4ee7-a61c-6ef28a37f37e"
+    c:
+      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+    cpp:
+      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+    cs:
+      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
     general:
-      _analyticsUserId: "0ccbbe58-eb52-47de-b6f8-ba0f6af45a51"
+      _analyticsUserId: "c020df16-a586-4ee7-a61c-6ef28a37f37e"
+    java:
+      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+    objectivec:
+      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+    pawn:
+      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+    vala:
+      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
   core:
     closeEmptyWindows: false
     disabledPackages: [
@@ -26,6 +39,7 @@
       "monokai"
     ]
   editor:
+    fontSize: 15
     invisibles: {}
     preferredLineLength: 150
     scrollPastEnd: true
@@ -53,3 +67,7 @@
 ".diff.source":
   editor:
     preferredLineLength: 150
+".grails.html.text":
+  editor:
+    preferredLineLength: 150
+    tabLength: 4

@@ -1,0 +1,50 @@
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/hasebe/.gitignore_global
+	quotepath = false
+[diff]
+	renames = true
+[alias]
+	# checkout関連
+	co = checkout
+	master = checkout master
+
+	# branch関連
+	br = branch
+	ba = branch -a           # originも含めた全てのbranchを表示
+	bm = branch --merged     # merge済みのbranchを表示
+	bn = branch --no-merged  # mergeしてないbranchを表示
+
+	# log関連
+	ls = log --stat          # logに変更されたファイルも一緒に出す
+	lp = log -p              # diffも一緒に出す
+	la = log --pretty=\"format:%ad %h (%an): %s\" --date=short  # ざっくりログ出す
+
+	# diff関連
+	dm = diff master           # masterとのdiff
+	dw = diff --color-words    # 単語単位でいろつけてdiff
+	dc = diff --cached         # addされているものとのdiff
+	ds = diff --staged         # 同上(1.6.1移行)
+	d1 = diff HEAD~            # HEADから1つ前とdiff
+	d2 = diff HEAD~~           # HEADから2つ前とdiff
+	d3 = diff HEAD~~~          # HEADから3つ前とdiff
+	d4 = diff HEAD~~~~         # HEADから4つ前とdiff
+	d5 = diff HEAD~~~~~        # HEADから5つ前とdiff
+	d10 = diff HEAD~~~~~~~~~~  # HEADから10前とdiff
+	
+	# pull関連
+	pr = pull --rebase		   # fetch + rebase
+
+	# now関連
+	n =  now --all --stat
+
+[user]
+	name = unagoccia
+	email = una.goccia.della.luna@gmail.com
+[url "https://"]
+	insteadOf = git://
+[merge]
+	ff = false
+[pull]
+	ff = only

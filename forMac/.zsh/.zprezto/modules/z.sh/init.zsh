@@ -1,7 +1,7 @@
 # Return if requirements are not found.
-if [[ "$OSTYPE" != darwin* ]]; then
-  return 1
-fi
+#if [[ "$OSTYPE" != darwin* && "$OSTYPE" != linux-gnu* ]]; then
+#  return 1
+#fi
 
 Z_MODULE_DIR=`dirname $0`
 Z_CLONE_DIR=${Z_MODULE_DIR}/z

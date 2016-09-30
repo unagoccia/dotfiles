@@ -20,6 +20,8 @@ alias dvisdoc='cd ~/svn/divs/doc-cache/trunk && set-tab-title dvis_doc_cache'
 alias dvisbibd='cd ~/svn/divs/doc-BIBD/trunk && set-tab-title dvis_bibd'
 alias dvisprp='cd ~/svn/divs/proper/trunk && set-tab-title dvis_proper'
 alias dviswork='cd ~/workspace/06.dvis && set-tab-title dvis_work'
+alias dvisapi='cd ~/workspace/06.dvis/01.src/data-visualization-api && set-tab-title dvis_api'
+alias dvisfront='cd ~/workspace/06.dvis/01.src/data-visualization-frontend && set-tab-title dvis_front'
 
 #
 # Functions

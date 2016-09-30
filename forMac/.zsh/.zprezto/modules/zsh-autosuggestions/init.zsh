@@ -1,7 +1,7 @@
 # Return if requirements are not found.
-if [[ "$OSTYPE" != darwin* ]]; then
-  return 1
-fi
+#if [[ "$OSTYPE" != darwin* && "$OSTYPE" != linux-gnu* ]]; then
+#  return 1
+#fi
 
 MODULE_DIR=`dirname $0`
 CLONE_REPOSITORY='git://github.com/tarruda/zsh-autosuggestions'

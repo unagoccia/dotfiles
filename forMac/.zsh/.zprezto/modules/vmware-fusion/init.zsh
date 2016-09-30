@@ -75,7 +75,7 @@ vmstart () {
      	echo "vm isn't selected."
      else
          vmrun -T fusion start "$selected_vm" nogui
-     fi
+     fi    
 }
 
 vmstop () {
@@ -89,7 +89,7 @@ vmstop () {
      	echo "vm isn't selected."
      else
          vmrun -T fusion stop "$selected_vm" soft
-     fi
+     fi    
 }
 
 vmsuspend () {
@@ -103,5 +103,5 @@ vmsuspend () {
      	echo "vm isn't selected."
      else
          vmrun -T fusion suspend "$selected_vm"
-     fi
+     fi    
 }
