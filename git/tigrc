@@ -1,3 +1,42 @@
+# 表示制御
+## main viewの左端にコミットIDを表示する
+set main-view = id date author commit-title:graph=yes,refs=yes
+## 差分の前後の表示行数（diff-context)を指定
+set diff-context = 6
+
+# bind
+
+## view操作
+bind generic g move-first-line
+bind main    G  none
+bind main    G  move-last-line
+bind generic G  move-last-line
+
+## rebaseを定義
 bind main    R !git rebase -i %(commit)
 bind diff    R !git rebase -i %(commit)
 
+## revertを定義
+bind main v !?git revert %(commit)
+bind diff v !?git revert %(commit)
+bind main V !?git revert %(prompt) %(commit)
+bind diff V !?git revert %(prompt) %(commit)
+
+## resetを定義
+bind main x !?git reset %(commit)
+bind diff x !?git reset %(commit)
+bind main X !?git reset %(prompt) %(commit)
+bind diff X !?git reset %(prompt) %(commit)
+
+## branch操作
+bind branch C !git co %(branch)
+bind branch B !git co -b %(prompt) %(branch)
+bind branch P !git pr origin %(branch)
+bind branch H !git-browse-remote %(branch)
+### delete
+bind branch D none
+bind branch D !git branch -d %(branch)
+bind branch ! ?git branch -D %(branch)
+### merge
+bind branch M none
+bind branch M !git merge %(branch)
