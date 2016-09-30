@@ -3,7 +3,7 @@ if [[ "$OSTYPE" != darwin* ]]; then
   return 1
 fi
 
-PATH="${PATH}:/Applications/VMware\ Fusion.app/Contents/Library"
+export PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
 VM_MACHINES_DIR="${HOME}/Documents/Virtual Machines.localized"
 
 # aliases
@@ -20,7 +20,7 @@ select_startvm () {
             vm_machines+=("${filepath}")
         fi
     done
-    
+
     if [[ $#vm_machines -ge 1 ]]; then
         echo "VM一覧"
         i=1
@@ -54,7 +54,7 @@ select_stopvm () {
             echo "${i}) ${vm_name}"
             i=$((i+1))
         done
-        
+
         echo -n "\nselect:"
         read selected_num
         selected_vm="${vm_machines[${selected_num}]}"
@@ -68,40 +68,40 @@ vmstart () {
     if [[ -z "$1" ]]; then
         select_startvm
     else
-        vm_machine="$1"
+        selected_vm="$1"
     fi
-    
+
      if [[ -z "${selected_vm}" ]]; then
      	echo "vm isn't selected."
      else
-         vmrun -T fusion start "$vm_machine" nogui
-     fi    
+         vmrun -T fusion start "$selected_vm" nogui
+     fi
 }
 
 vmstop () {
     if [[ -z "$1" ]]; then
         select_stopvm
     else
-        vm_machine="$1"
+        selected_vm="$1"
     fi
-    
+
      if [[ -z "${selected_vm}" ]]; then
      	echo "vm isn't selected."
      else
-         vmrun -T fusion stop "$vm_machine" soft
-     fi    
+         vmrun -T fusion stop "$selected_vm" soft
+     fi
 }
 
 vmsuspend () {
     if [[ -z "$1" ]]; then
         select_stopvm
     else
-        vm_machine="$1"
+        selected_vm="$1"
     fi
-    
+
      if [[ -z "${selected_vm}" ]]; then
      	echo "vm isn't selected."
      else
-         vmrun -T fusion suspend "$vm_machine"
-     fi    
+         vmrun -T fusion suspend "$selected_vm"
+     fi
 }
