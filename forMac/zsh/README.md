@@ -21,12 +21,12 @@
   ```sh
   cd ${.zpreztoが保存されているディレクトリ}
   
-  path_zprezto=$(cd $(basename .zprezto);pwd)  
+  path_zprezto=$(cd $(basename zprezto);pwd)  
   rm -rf $HOME/.zprezto  
   ln -snf $path_zprezto $HOME/.zprezto  
   ```
   
 1. Shellのデフォルトに設定  
   ```sh
-  chsh -s /bin/zsh  
+  chsh -s /usr/local/bin/zsh  
   ```
