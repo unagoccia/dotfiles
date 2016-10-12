@@ -16,6 +16,8 @@
       configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
     vala:
       configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+  "autocomplete-plus":
+    confirmCompletion: "enter"
   core:
     closeEmptyWindows: false
     disabledPackages: [
@@ -56,10 +58,18 @@
     showErrorPanel: false
   minimap:
     plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
       "minimap-autohide": true
       "minimap-autohideDecorationsZIndex": 0
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
   "tree-view":
     hideIgnoredNames: true
   welcome:

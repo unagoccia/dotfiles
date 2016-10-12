@@ -37,3 +37,14 @@
 'body':
   'alt-up': 'editor:add-selection-above'
   'alt-down': 'editor:add-selection-below'
+
+# autocomplete --------
+'atom-workspace atom-text-editor:not([mini]).autocomplete-active':
+  'up': 'my:move-up'
+  'down': 'my:move-down'
+  # この設定については直ぐ下の所で詳しく説明します。
+
+  'tab': 'core:move-down'
+  'shift-tab': 'core:move-up'
+  # オートコンプリートの候補をタブで移動出来る様にする為の設定です。
+  # この設定には追加で「autocomplete-plusの設定＞confirmCompletion: "enter"」を設定する必要があります。
