@@ -32,6 +32,7 @@ alias caski='brew file brew cask install'
 alias caskl='brew cask list'
 alias casks='brew cask search'
 alias caskx='brew file brew cask uninstall'
+alias casku='brew cask install --force $(brew cask list)'
 
 #
 # Access Token
