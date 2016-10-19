@@ -7,3 +7,6 @@ compile-cache
 projects.cson
 packages
 storage
+/git-time-machine
+/split-diff
+/.git-history
