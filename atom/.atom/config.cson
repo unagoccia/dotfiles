@@ -36,6 +36,7 @@
       ".localized"
       ".vagrant"
     ]
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "monokai"
@@ -47,6 +48,7 @@
     scrollPastEnd: true
     showIndentGuide: true
     tabLength: 4
+    tabType: "soft"
     undoGroupingInterval: 1000
   "exception-reporting":
     userId: "e3827a09-2475-c9d9-1b45-cd2ec54493aa"
