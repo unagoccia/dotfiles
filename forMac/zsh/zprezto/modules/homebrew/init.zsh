@@ -5,6 +5,8 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+script_dir=`dirname $0`
+
 # Return if requirements are not found.
 if [[ "$OSTYPE" != darwin* ]]; then
   return 1
@@ -32,7 +34,8 @@ alias caski='brew file brew cask install'
 alias caskl='brew cask list'
 alias casks='brew cask search'
 alias caskx='brew file brew cask uninstall'
-alias casku='brew cask install --force $(brew cask list)'
+alias casku='${script_dir}/cask-upgrade-all.rb -f'
+#alias casku='brew cask install --force $(brew cask list)'
 
 #
 # Access Token
