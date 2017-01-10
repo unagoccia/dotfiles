@@ -42,7 +42,8 @@
       "monokai"
     ]
   editor:
-    fontSize: 15
+    fontFamily: "Osaka"
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 150
     scrollPastEnd: true
@@ -56,8 +57,8 @@
   "highlight-line": {}
   "japanese-wrap":
     characterWidth: {}
-  linter:
-    showErrorPanel: false
+  linter: {}
+  "linter-eslint": {}
   minimap:
     plugins:
       "git-diff": true
@@ -74,6 +75,7 @@
     syncHorizontalScroll: true
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
 ".diff.source":

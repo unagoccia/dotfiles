@@ -3,8 +3,12 @@
 [core]
 	excludesfile = /Users/hasebe/.gitignore_global
 	quotepath = false
+	attributesfile = /Users/hasebe/.gitattributes
 [diff]
 	renames = true
+[diff "xlsx"]
+    	binary = true
+    	textconv = $GOPATH/bin/git-xlsx-textconv
 [alias]
 	# checkout関連
 	co = checkout

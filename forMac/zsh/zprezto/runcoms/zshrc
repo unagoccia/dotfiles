@@ -116,6 +116,7 @@ alias scp="cat ~/.ssh/*/config >| ~/.ssh/config;scp"
 ## PATH ##
 export PATH="${HOME}/.nodebrew/current/bin:${PATH}"
 typeset -U path cdpath fpath manpath
+export GOPATH=$HOME/.go
 
 ## cdr
 autoload -Uz add-zsh-hock
