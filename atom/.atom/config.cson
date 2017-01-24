@@ -58,7 +58,8 @@
   "japanese-wrap":
     characterWidth: {}
   linter: {}
-  "linter-eslint": {}
+  "linter-eslint":
+    fixOnSave: true
   minimap:
     plugins:
       "git-diff": true
