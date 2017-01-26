@@ -76,7 +76,6 @@
     syncHorizontalScroll: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
 ".diff.source":
