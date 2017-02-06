@@ -113,6 +113,8 @@ alias f='open .'
 alias ssh="cat ~/.ssh/*/config >| ~/.ssh/config;ssh"
 alias scp="cat ~/.ssh/*/config >| ~/.ssh/config;scp"
 
+alias rmds='find . -name '*.DS_Store' -type f -delete'
+
 ## PATH ##
 export PATH="${HOME}/.nodebrew/current/bin:${PATH}"
 typeset -U path cdpath fpath manpath
