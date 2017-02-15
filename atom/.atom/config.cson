@@ -25,6 +25,7 @@
       "file-icons"
       "grunt-runner"
       "linter-jshint"
+      "language-gfm"
     ]
     ignoredNames: [
       ".git"
