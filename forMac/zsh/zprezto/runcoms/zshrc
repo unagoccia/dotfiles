@@ -113,12 +113,16 @@ alias f='open .'
 alias ssh="cat ~/.ssh/*/config >| ~/.ssh/config;ssh"
 alias scp="cat ~/.ssh/*/config >| ~/.ssh/config;scp"
 
-alias rmds='find . -name '*.DS_Store' -type f -delete'
+alias rmds="find . -name '*.DS_Store' -type f -delete"
 
 ## PATH ##
-export PATH="${HOME}/.nodebrew/current/bin:${PATH}"
-typeset -U path cdpath fpath manpath
+NODEBREW_HOME="${HOME}/.nodebrew/current/bin"
+LOCAL_BIN="/opt/local/bin"
+export PATH="${LOCAL_BIN}:${NODEBREW_HOME}:${PATH}"
 export GOPATH=$HOME/.go
+
+#### PATH重複削除
+typeset -U path cdpath fpath manpath PATH
 
 ## cdr
 autoload -Uz add-zsh-hock

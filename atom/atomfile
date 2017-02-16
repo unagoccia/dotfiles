@@ -40,7 +40,6 @@ linter-less@2.6.0
 merge-conflicts@1.4.4
 minimap@4.26.8
 minimap-autohide@0.10.1
-minimap-color-highlight@4.1.4
 minimap-git-diff@4.3.1
 minimap-highlight-selected@4.5.0
 monokai@0.20.0
@@ -57,4 +56,3 @@ sort-lines@0.14.0
 tablr@1.8.1
 textile-preview@0.1.1
 unity-ui@2.1.8
-
