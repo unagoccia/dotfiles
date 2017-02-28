@@ -5,8 +5,8 @@
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
-  'cot-editor' \
   'completion' \
+  'cot-editor' \
   'directory' \
   'docker' \
   'editor' \
@@ -17,6 +17,7 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'homebrew' \
   'jenv' \
+  'nodebrew' \
   'peco' \
   'prompt' \
   'proxy' \
@@ -27,5 +28,5 @@ zstyle ':prezto:load' pmodule \
   'vmware-fusion' \
   'wine' \
   'works' \
-  'zsh-autosuggestions' \
-  'z.sh'
+  'z.sh' \
+  'zsh-autosuggestions'

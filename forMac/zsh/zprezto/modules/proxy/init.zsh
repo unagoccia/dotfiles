@@ -30,9 +30,9 @@ function set_proxy() {
   export https_proxy=$http_proxy
   export HTTPS_PROXY=$http_proxy
 
-  #git config --global http.proxy $proxy
-  #git config --global https.proxy $proxy
-  git config --global url."https://".insteadOf git://
+  git config --global http.proxy $proxy
+  git config --global https.proxy $proxy
+  #git config --global url."https://".insteadOf git://
 
   # 例外設定
   export no_proxy=localhost
