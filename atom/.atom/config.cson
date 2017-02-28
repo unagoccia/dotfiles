@@ -25,6 +25,7 @@
       "file-icons"
       "grunt-runner"
       "linter-jshint"
+      "language-gfm"
     ]
     ignoredNames: [
       ".git"
@@ -38,11 +39,11 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "monokai"
+      "atom-dark-ui"
+      "dark-monokai-batch"
     ]
   editor:
-    fontFamily: "Osaka"
+    fontFamily: "Osaka-mono"
     fontSize: 16
     invisibles: {}
     preferredLineLength: 150

@@ -46,9 +46,12 @@
 [user]
 	name = unagoccia
 	email = una.goccia.della.luna@gmail.com
-[url "https://"]
-	insteadOf = git://
 [merge]
 	ff = false
 [pull]
 	ff = only
+[url "https://"]
+[http]
+	proxy = proxy.sso.ntts.co.jp:18080
+[https]
+	proxy = proxy.sso.ntts.co.jp:18080
