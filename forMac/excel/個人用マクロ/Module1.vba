@@ -1,8 +1,9 @@
+
 Sub セル結合()
 '
 ' セル結合 Macro
 '
-' ショートカット キー: option + command + shift +M
+' ショートカット キー: ctrl + option + M
 '
     With Selection
         .HorizontalAlignment = xlCenter
@@ -20,7 +21,7 @@ Sub セル結合解除()
 '
 ' セル結合解除 Macro
 '
-' ショートカット キー: option + command + shift +N
+' ショートカット キー: ctrl + option + shift + M
 '
     With Selection
         .HorizontalAlignment = xlGeneral
@@ -34,12 +35,12 @@ Sub セル結合解除()
     Selection.Merge True
 End Sub
 
-Sub 罫線_囲み()
+Sub 罫線_外枠()
 '
-' 罫線_囲み Macro
+' 罫線_外枠 Macro
 ' 罫線なし -> 囲み罫線 -> 白塗り
 '
-' ショートカット キー: option + command +l
+' ショートカット キー: ctrl + option + R
 '
     Selection.Borders(xlDiagonalDown).LineStyle = xlNone
     Selection.Borders(xlDiagonalUp).LineStyle = xlNone
@@ -80,7 +81,7 @@ Sub 罫線_格子()
 '
 ' 罫線_格子 Macro
 '
-' ショートカット キー: option + command +g
+' ショートカット キー: ctrl + option + G
 '
     Selection.Borders(xlDiagonalDown).LineStyle = xlNone
     Selection.Borders(xlDiagonalUp).LineStyle = xlNone
@@ -120,7 +121,7 @@ Sub 罫線なし()
 '
 ' 罫線なし Macro
 '
-' ショートカット キー: option + command + shift +G
+' ショートカット キー: ctrl + option + shift +G
 '
     Selection.Borders(xlDiagonalDown).LineStyle = xlNone
     Selection.Borders(xlDiagonalUp).LineStyle = xlNone
@@ -131,4 +132,3 @@ Sub 罫線なし()
     Selection.Borders(xlInsideVertical).LineStyle = xlNone
     Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
 End Sub
-
