@@ -14,6 +14,7 @@ Public Sub RegisterShortcut()
     Application.OnKey "^%r", "罫線_外枠"
     Application.OnKey "^%g", "罫線_格子"
     Application.OnKey "^%+g", "罫線なし"
+    Application.OnKey "^%+v", "値のみペースト"
 
 nextProc:
 

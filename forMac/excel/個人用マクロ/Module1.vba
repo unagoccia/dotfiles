@@ -132,3 +132,13 @@ Sub 罫線なし()
     Selection.Borders(xlInsideVertical).LineStyle = xlNone
     Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
 End Sub
+
+Sub 値のみペースト()
+'
+' 値のみペースト Macro
+'
+' ショートカット キー: ctrl + option + shift +G
+'
+    Selection.PasteSpecial Paste:=xlValues, Operation:=xlNone, SkipBlanks:= _
+        False, Transpose:=False
+End Sub
