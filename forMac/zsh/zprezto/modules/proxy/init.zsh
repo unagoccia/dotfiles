@@ -6,7 +6,7 @@ fi
 #
 # Value
 #
-proxy=proxy.sso.ntts.co.jp:18080
+proxy=xxxxxxxxx:xxxx
 
 #
 # Aliases
