@@ -7,9 +7,9 @@ fi
 # Aliases
 #
 
-alias eas='cd ~/svn/テックキャンバス/eas/trunk'
-alias easdoc='cd ~/svn/テックキャンバス/eas_doc/trunk'
-alias easshare='cd ~/svn/テックキャンバス/eas_share/trunk'
+alias xxx='cd ~/svn/xxxxxx/xxx/trunk'
+alias xxxdoc='cd ~/svn/xxxxxxx/xxx_doc/trunk'
+alias xxxshare='cd ~/svn/xxxxxxx/xxx_share/trunk'
 
 #
 # Functions
