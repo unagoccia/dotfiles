@@ -12,7 +12,7 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 alias setproxy="set_proxy"
 alias unsetproxy="unset_proxy"
 
-proxy=proxy.sso.ntts.co.jp:18080
+proxy=xxxxxxxxxxx:18080
 
 function set_proxy() {
   export http_proxy=$proxy
