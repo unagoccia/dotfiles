@@ -8,11 +8,8 @@ fi
 #
 
 ## eas ##
-alias eas='cd ~/svn/eas/eas/trunk && set-tab-title eas_src'
-alias easdoc='cd ~/svn/eas/eas_doc/trunk && set-tab-title eas_doc'
-alias easshare='cd ~/svn/eas/eas_share/trunk && set-tab-title eas_share'
-alias easntts='cd ~/svn/eas/eas_share/trunk && set-tab-title eas_ntts'
-alias easwork='cd ~/workspace/05.eas && set-tab-title eas_work'
+alias eassrc='cd ~/workspace/project/eas/02.src/eas/trunk && set-tab-title eas_src'
+alias easdoc='cd ~/workspace/project/eas/01.doc/eas_doc/trunk && set-tab-title eas_doc'
 
 ## dvis  ##
 alias dvis='cd ~/workspace/project/dvis && set-tab-title dvis'
@@ -21,6 +18,7 @@ alias dvisbibd='cd ~/workspace/project/dvis/01.doc/doc-BIBD/trunk && set-tab-tit
 alias dvisprp='cd ~/workspace/project/dvis/01.doc/proper/trunk && set-tab-title dvis_proper'
 alias dvisapi='cd ~/workspace/project/dvis/02.src/data-visualization-api && set-tab-title dvis_api'
 alias dvisfront='cd ~/workspace/project/dvis/02.src/data-visualization-frontend && set-tab-title dvis_front'
+alias dvisdebian='cd ~/workspace/project/dvis/02.src/debianpackage-dvis-viewer && set-tab-title dvis_debian'
 
 #
 # Functions

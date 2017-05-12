@@ -3,13 +3,13 @@
     c:
       configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
     cpp:
-      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+      configPath: "/Users/unagoccia/.uncrustify/uncrustify.cfg"
     cs:
-      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+      configPath: "/Users/unagoccia/.uncrustify/uncrustify.cfg"
     general:
       _analyticsUserId: "c020df16-a586-4ee7-a61c-6ef28a37f37e"
     java:
-      configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
+      configPath: "/Users/unagoccia/.uncrustify/uncrustify.cfg"
     objectivec:
       configPath: "/Users/hasebe/.uncrustify/uncrustify.cfg"
     pawn:
@@ -40,10 +40,10 @@
     telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
-      "dark-monokai-batch"
+      "atom-monokai-dark"
     ]
   editor:
-    fontFamily: "Osaka-mono"
+    fontFamily: "Osaka"
     fontSize: 16
     invisibles: {}
     preferredLineLength: 150
@@ -61,6 +61,10 @@
   linter: {}
   "linter-eslint":
     fixOnSave: true
+  "linter-shellcheck":
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  "linter-ui-default":
+    showPanel: true
   minimap:
     plugins:
       "git-diff": true
@@ -74,6 +78,7 @@
     ignoreWhitespace: true
     leftEditorColor: "red"
     rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
     syncHorizontalScroll: true
   "tree-view":
     hideIgnoredNames: true
@@ -86,3 +91,11 @@
   editor:
     preferredLineLength: 150
     tabLength: 4
+".shell-session.text":
+  editor:
+    softWrap: true
+    softWrapHangingIndent: 4
+".shell.source":
+  editor:
+    softWrap: true
+    softWrapHangingIndent: 4
