@@ -12,6 +12,7 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'git' \
   'gnu-utility' \
+  'groovy-serv' \
   'gvm' \
   'history' \
   'homebrew' \
