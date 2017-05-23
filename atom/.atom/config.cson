@@ -64,6 +64,7 @@
   "linter-shellcheck":
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   "linter-ui-default":
+    panelHeight: 81
     showPanel: true
   minimap:
     plugins:

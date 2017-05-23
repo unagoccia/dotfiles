@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
-puts "brew cask update:"
-puts `brew cask update`
 puts "brew upgrade:"
 puts `brew upgrade`
+puts "brew update:"
+puts `brew update`
 
 cask_list = `brew cask list`.split("\n")
 ignore_item = ['']#gpgtools']
